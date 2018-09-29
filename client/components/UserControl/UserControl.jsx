@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import UserForm from './UserForm.jsx'
 
-const UserControl = props => {
+export const UserControl = props => {
   const { login, user, logout, errorMessage, loginPageName, handleLoginName } = props;
   return (
     <div>

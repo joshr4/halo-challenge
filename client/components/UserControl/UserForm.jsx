@@ -24,12 +24,12 @@ const UserForm = props => {
         />
       </div>
       <div>
-        <Button type="submit" bsStyle="primary">
+        <Button id="login-button" type="submit" bsStyle="primary">
           {loginPageName}
         </Button>
       </div>
       {!!errorMessage ? (
-        <Alert bsStyle="warning">{errorMessage}</Alert>
+        <Alert id="login-errorMessage" bsStyle="warning">{errorMessage}</Alert>
       ) : null}
     </form>
   );
