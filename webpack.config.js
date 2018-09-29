@@ -8,7 +8,7 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: './public/static/bundle.js'
   },
   resolve: {
     extensions: ['.js', '.jsx']
