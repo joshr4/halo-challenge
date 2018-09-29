@@ -19,7 +19,7 @@ const AddKey = props => {
         placeholder="Enter a value"
         onChange={handleChange}
         />
-      <Button bsStyle="primary" onClick={addKey}>Add key</Button>
+      <Button id="add-key-btn" bsStyle="primary" onClick={addKey}>Add key</Button>
     </div>
   )
 };

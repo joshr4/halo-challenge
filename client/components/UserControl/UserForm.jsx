@@ -24,7 +24,7 @@ const UserForm = props => {
         />
       </div>
       <div>
-        <Button id="login-button" type="submit" bsStyle="primary">
+        <Button id="login-btn" type="submit" bsStyle="primary">
           {loginPageName}
         </Button>
       </div>
