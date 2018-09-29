@@ -1,5 +1,5 @@
 {
-  "name": "Halo Challenge",
+  "name": "Halo-Challenge",
   "version": "1.0.0",
   "description": "A simple app to get and set keys using a React frontend and a flask backend",
   "engines": {
