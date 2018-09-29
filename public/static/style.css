@@ -8,7 +8,21 @@
 /* Key page */
 .add-key {
   display: flex;
-  margin-top: 10%;
+  margin: 10% auto;
+  justify-content: center;
+}
+
+.add-key > input {
+  max-width: 250px;
+  margin-right: 1em;
+}
+
+.table-head > th {
+  width: 100px;
+}
+
+.key-button {
+  width: 100px;
 }
 
 /* User Login Page */
