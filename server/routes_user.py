@@ -30,6 +30,7 @@ def signup():
         }
     except:
         return json.dumps({'message': 'Signup Error, please try another username.'})
+    login_user(user)
     return json.dumps({'user': jsonUser, 'messsage': 'Signup!'})
 
 @app.route('/logout')
