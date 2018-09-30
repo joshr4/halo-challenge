@@ -26,7 +26,10 @@ export const UserControl = props => {
             </div>)}
       </div>
       {!!user ? null : (
+        <div>
+          <h3 className="login-title">{loginPageName==='login' ? 'User Login' : 'User Signup'}</h3>
           <UserForm login={login} errorMessage={errorMessage} loginPageName={loginPageName} />
+        </div>
         )}
     </div>
   );
