@@ -19,8 +19,14 @@ pipenv install
 ```
 * Please edit the `env` file in the root of the project folder so that the SQLALCHEMY_DATABASE_URI variable points to an empty table in your postgres server.
 
-* Finally, start the flask server and then visit http://localhost:5000.
+* Next, initialize the backend server database tables by running the following scripts.
 ```
 pipenv shell
+flask db init
+flask db migrate
+flask db upgrade
+```
+* Finally, from within the pipenv shell, start the flask server and then visit http://localhost:5000.
+```
 flask run
 ```
