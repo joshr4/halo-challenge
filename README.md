@@ -15,18 +15,14 @@ cd halo-challenge
 * Next, install the required project dependencies. Please ensure you already have the npm and pipenv package managers installed on your system.
 ```
 npm install
-pipenv install
 ```
 * Please edit the `env` file in the root of the project folder so that the SQLALCHEMY_DATABASE_URI variable points to an empty table in your postgres server.
 
-* Next, initialize the backend server database tables by running the following scripts.
+* Next, initialize the backend server database tables.
 ```
-pipenv shell
-flask db init
-flask db migrate
-flask db upgrade
+npm run seed
 ```
-* Finally, from within the pipenv shell, start the flask server and then visit http://localhost:5000.
+* Finally, start the flask server and visit http://localhost:5000.
 ```
-flask run
+npm start
 ```

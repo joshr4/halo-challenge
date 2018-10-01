@@ -15,11 +15,12 @@
     "precommit": "# lint-staged # un-comment to enable",
     "prepare": "if [ -d .git ]; then npm-merge-driver install; fi",
     "prettify": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
-    "postinstall": "touch secrets.js",
-    "seed": "node script/seed.js",
-    "start": "node server2",
+    "postinstall": "touch secrets.js | pipenv install",
+    "seed": "pipenv run db-migrate; pipenv run db-upgrade",
+    "db-init": "pipenv run db-init",
+    "start": "pipenv run start",
     "start-dev": "NODE_ENV='development' npm run build-client-watch & npm run start-server",
-    "start-server": "nodemon server2 -e html,js,scss --ignore public --ignore client",
+    "start-server": "pipenv run start",
     "test": "NODE_ENV='test' mocha --watch \"./client/**/**/*.spec.js\" --require @babel/polyfill --require @babel/register"
   },
   "lint-staged": {
