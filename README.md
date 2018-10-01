@@ -26,3 +26,8 @@ npm run seed
 ```
 npm start
 ```
+
+### Notes
+
+This app uses a boilermaker project as a starting point. All new code for the front end is contained within the `/client/components` directory. The backend portion of the app is contained within the `/server/` folder as well as the `pipfile`, `.env`, and `halo.py` files in the root directory. The package.json scripts have been edited to replace the boilermaker's node.js backend server commands with pipenv commands for the python flask server.
+
