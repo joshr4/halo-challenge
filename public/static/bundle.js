@@ -605,7 +605,8 @@ var UserControl = function UserControl(props) {
       return handleLoginName('signup');
     },
     bsStyle: "primary"
-  }, "Signup"))), !!user ? null : _react.default.createElement("div", null, _react.default.createElement("h3", {
+  }, "Signup"))), !!user ? null : //only display userForm if user is not logged in
+  _react.default.createElement("div", null, _react.default.createElement("h3", {
     className: "login-title"
   }, loginPageName === 'login' ? 'User Login' : 'User Signup'), _react.default.createElement(_UserForm.default, {
     login: login,

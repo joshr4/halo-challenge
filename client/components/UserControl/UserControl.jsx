@@ -25,7 +25,7 @@ export const UserControl = props => {
             </Button>
             </div>)}
       </div>
-      {!!user ? null : (
+      {!!user ? null : ( //only display userForm if user is not logged in
         <div>
           <h3 className="login-title">{loginPageName==='login' ? 'User Login' : 'User Signup'}</h3>
           <UserForm login={login} errorMessage={errorMessage} loginPageName={loginPageName} />

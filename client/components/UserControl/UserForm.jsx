@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Alert, FormControl, ControlLabel, Form } from 'react-bootstrap';
+import { Button, Alert, FormControl, ControlLabel } from 'react-bootstrap';
 
 const UserForm = props => {
   const { login, errorMessage, loginPageName } = props;
