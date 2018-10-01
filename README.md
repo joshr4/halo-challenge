@@ -12,7 +12,7 @@ git clone https://github.com/joshr4/halo-challenge.git
 cd halo-challenge
 ```
 
-* Next, install the required project dependencies. Please ensure you already have the npm and pipenv package managers installed on your system.
+* Next, install the required project dependencies. Please ensure you already have the **npm** and **pipenv** package managers installed on your system. It also assumed that **python** is also already installed.
 ```
 npm install
 ```
