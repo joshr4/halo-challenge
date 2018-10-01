@@ -31,3 +31,5 @@ npm start
 
 This app uses a boilermaker project as a starting point. All new code for the front end is contained within the `/client/components` directory. The backend is completely new and contained within the `/server/` folder as well as the `pipfile`, `.env`, and `halo.py` files in the root directory. The package.json scripts have been edited to replace the boilermaker's node.js backend server commands with pipenv commands for the python flask server.
 
+* Front end tests can be run in watch mode by using the script **npm run test**.
+
