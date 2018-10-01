@@ -69,7 +69,6 @@ class KeyControl extends Component {
   render() {
     const { newKey, newValue, userKeys, errorMessage } = this.state
     const { handleChange, addKey, deleteKey, getValue } = this
-    console.log('userKeys',userKeys)
     return (
       <div className="key-control">
         <AddKey newKey={newKey} newValue={newValue} handleChange={handleChange} addKey={addKey} />
@@ -86,6 +85,7 @@ class KeyControl extends Component {
             {userKeys.map(key => (<SingleKey keyInfo={key} deleteKey={deleteKey} getValue={getValue} key={key.id} />))}
           </tbody>
         </Table>
+        {!userKeys.length ? <h3 className="no-key-text">Add some keys above to get started</h3> : null}
       </div>
     )
   }

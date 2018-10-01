@@ -25,6 +25,10 @@
   width: 100px;
 }
 
+.no-key-text {
+  text-align: center;
+}
+
 /* User Login Page */
 .nav-bar {
   display: flex;
